@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form ลงทะเบียนศิษย์เก่า</h1>
+    <form action="https://example.com/"method="post">
+      <label for="ชื่อ-สกุล">ชื่อ-สกุล : </label>
+      <input type="text"
+       name ="ชื่อ-สกุล" 
+       value=""       
+       size="20"
+       maxlength="20"
+      />
+      <!--new line-->
+      <br>
+      <br/>
+
+      <label for="รหัสนักศึกษา">รหัสนักศึกษา : </label>
+      <input type="text"
+       name ="รหัสนักศึกษา" 
+       value=""       
+       size="20"
+       maxlength="20"
+      />
+     <br/>
+     <br/>
+     
+    <label for="gender">เพศ : </label>
+    <input type="radio" name="gender" value="1"> ผู้ชาย
+    <input type="radio" name="gender" value="2"> ผู้หญิง
+    <input type="radio" name="gender" value="3"> LGBT+
+
+    <br/>
+    <br/>
+    <label for="ปีการศึกษาเข้าศึกษา">ปีการศึกษาเข้าศึกษา : </label>
+      <input type="text"
+       name ="ปีการศึกษาเข้าศึกษา" 
+       value=""       
+       size="20"
+       maxlength="20"/>
+     <br/>
+     <br/>
+     <label for="ที่อยู่">ที่อยู่ : </label>
+     <br>
+       <textarea name="address" id="" cols="30" rows="10">
+
+       </textarea>
+       
+
+    <br/>
+    <br/>
+
+      <label for="Email">Email : </label>
+      <input type="email"
+       name ="Email" 
+       value=""       
+       size="20"
+       maxlength="20"
+      />
+      
+      <br/>
+      <br/>
+     
+
+      <label for="เบอร์โทร">เบอร์โทร : </label>
+      <input type="text" 
+       name ="เบอร์โทร"
+       value=""       
+       size="20"
+       maxlength="20"/>
+       
+       <br/>
+    <br>  
+    
+    <label for="ชื่อหลักสูตร">ชื่อหลักสูตร : </label>
+    <select name="dept">
+        <option value="1">IT</option>
+        <option value="2">IS</option>
+    </select>
+
+    <br/>
+    <br/>
+
+      <label for="อาชีพปัจจุบัน">อาชีพปัจจุบัน : </label>
+      <input type="text" 
+       name ="อาชีพปัจจุบัน"    
+       value=""       
+       size="20"
+       maxlength="20"/>
+    
+       <br/>
+       <br/>
+      <label for="สถานที่ทำงาน(ระบุชื่อบริษัทและทีอยู่)">สถานที่ทำงาน(ระบุชื่อบริษัทและทีอยู่): </label>
+       <br>
+        <textarea name="สถานที่ทำงาน(ระบุชื่อบริษัทและทีอยู่)" id="" cols="30" rows="10">
+ 
+        </textarea>
+        
+ 
+     <br/>  
+     <br>  
+    
+    <label for="ชื่อหลักสูตร">ชื่อหลักสูตร : </label>
+    <select name="dept">
+        <option value="1">IT</option>
+        <option value="2">IS</option>
+    </select>
+
+    <br/>
+
+    <br/>
+
+    <label for="Upload รูปถ่ายตนเอง 1 รูป">Upload รูปถ่ายตนเอง 1 รูป : </label>
+    <input type="file" name="Upload รูปถ่ายตนเอง 1 รูป"/>
+    
+    <br/>
+    <br/>
+
+      <input type="submit" value="ลงทะเบียน">
+      
+      <input type="reset" value="ยกเลิก">
+
+      
+      </form>
+</body>
+</html>
