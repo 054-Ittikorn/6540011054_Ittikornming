@@ -5,72 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #recipe-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        #food-image {
+            width: 50%;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #food-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        #recipe-details {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #ingredients, #instructions {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        #instructions h3 {
+            color: #555;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+    </style>
     <title>ปลากระพงนึ่งมะนาว</title>
 </head>
 <body>
+
     <header>
         <h1>ปลากระพงนึ่งมะนาว</h1>
     </header>
 
-    
+    <div id="recipe-container">
+        <section id="food-image">
+            <img src="image/Spicy-fish-2.jpg" alt="ปลากระพงนึ่งมะนาว"/>
+        </section>
 
-    <section id="food-image">
-        <img src="image/Spicy-fish-2.jpg" alt="ปลากระพงนึ่งมะนาว" width="550 px"/>
-    </section>git remote add origin
+        <section id="recipe-details">
+            <h2>รายการเครื่องปรุงส่วนผสม</h2>
+            <ul> 
+                <li>ปลากระพง 1 ตัว</li>            
+                <li>มะนาว 3-4 ลูก</li> 
+                <li>กระเทียม 5-6 กลีบ</li>
+                <li>พริก 2-3 เม็ด</li>
+                <li>ซีอิ๊วขาว 2 ช้อนโต๊ะ</li>
+                <li>ซอสปรุงรส 1 ช้อนโต๊ะ</li>
+                <li>น้ำมันหอย 1 ช้อนโต๊ะ</li>
+                <li>ผักต่าง ๆ (ต้องการ)</li>
+            </ul>
 
-    <section id="ingredients">
-        <h2>รายการเครื่องปรุงส่วนผสม</h2>
-        <ul> 
-            <li>ปลากระพง 1 ตัว</li>            
-            <li>มะนาว 3-4 ลูก</li> 
-            <li>กระเทียม 5-6 กลีบ</li>
-            <li>พริก 2-3 เม็ด</li>
-            <li>ซีอิ๊วขาว 2 ช้อนโต๊ะ</li>
-            <li>ซอสปรุงรส 1 ช้อนโต๊ะ</li>
-            <li>น้ำมันหอย 1 ช้อนโต๊ะ</li>
-            <li>ผักต่าง ๆ (ต้องการ)</li>
-        </ul>
-    </section>
+            <h2>ขั้นตอนการทำ</h2>
+            <h3>STEP 1 : เตรียมส่วนผสม</h3>
+            <ul>
+                <li>ล้างปลากระพงให้สะอาด</li>
+                <li>ผ่าท้องปลาและล้างให้สะอาด</li>
+                <li>หั่นมะนาว, กระเทียม, และพริกเป็นชิ้นเล็ก</li>
+            </ul>
 
-    <section id="instructions">
-        <h2>ขั้นตอนการทำ</h2>
-        <h3>STEP 1 : เตรียมส่วนผสม</h3>
-        <ul>
-            <li>ล้างปลากระพงให้สะอาด</li>
-            <li>ผ่าท้องปลาและล้างให้สะอาด</li>
-            <li>หั่นมะนาว, กระเทียม, และพริกเป็นชิ้นเล็ก</li>
-        </ul>
+            <h3>STEP 2 : ปรุงน้ำซุป</h3>
+            <ul>
+                <li>นำมะนาว, กระเทียม, พริก, ซีอิ๊วขาว, ซอสปรุงรส, และน้ำมันหอยผสมเข้าด้วยกัน</li>
+                <li>นำปลากระพงวางในภาชนะที่ใช้นึ่ง</li>
+                <li>ทาน้ำซุปที่ผสมให้ทั่วทั้งปลา</li>
+            </ul>
 
-        <h3>STEP 2 : ปรุงน้ำซุป</h3>
-        <ul>
-            <li>นำมะนาว, กระเทียม, พริก, ซีอิ๊วขาว, ซอสปรุงรส, และน้ำมันหอยผสมเข้าด้วยกัน</li>
-            <li>นำปลากระพงวางในภาชนะที่ใช้นึ่ง</li>
-            <li>ทาน้ำซุปที่ผสมให้ทั่วทั้งปลา</li>
-        </ul>
+            <h3>STEP 3 : นึ่งปลา</h3> 
+            <ul>
+                <li>นึ่งปลาที่เตรียมไว้ในน้ำซุปที่เตรียมไว้ ประมาณ 20-30 นาที</li>
+                <li>ตรวจสอบความสุกของปลา</li>
+            </ul>
 
-        <h3>STEP 3 : นึ่งปลา</h3> 
-        <ul>
-            <li>นึ่งปลาที่เตรียมไว้ในน้ำซุปที่เตรียมไว้ ประมาณ 20-30 นาที</li>
-            <li>ตรวจสอบความสุกของปลา</li>
-        </ul>
+            <h3>STEP 4 : จัดเสิร์ฟ</h3> 
+            <ul>
+                <li>เสิร์ฟปลากระพงนึ่งมะนาวพร้อมผักต่าง ๆ</li>
+            </ul>
 
-        <h3>STEP 4 : จัดเสิร์ฟ</h3> 
-        <ul>
-            <li>เสิร์ฟปลากระพงนึ่งมะนาวพร้อมผักต่าง ๆ</li>
-        </ul>
-        <br/>
-     <label for="Coment">Coment : </label>
-     <br>
-       <textarea name="address" id="" cols="30" rows="10">
-
-       </textarea>
-       
-
-    <br/>
-    </section>
+            <label for="comment">Comment : </label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="5" style="resize: vertical;"></textarea>
+            <br/>
+        </section>
+    </div>
 
     <footer>
-    
-    </footer>
-</body>
-</html>
+        &copy; 2024 Your Website Name
+    </footer
