@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 5: Box Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .main {
+            border: 2px solid rgb(255, 0, 0);
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+        }
+
+        .feature {
+            border: 1px solid rgb(60, 16, 221);
+            padding: 10px;
+            margin-right: 10px;
+            flex: 2; /* Larger size */
+            background-color: rgb(9, 13, 224);
+            height: 200px; /* Adjusted height for the red box */
+        }
+
+        .col1,
+        .col2 {
+            border: 1px solid rgb(60, 16, 221);
+            padding: 10px;
+            flex: 1; /* Smaller size */
+            background-color: rgb(9, 13, 224);
+            margin-right: 5px; /* Added margin for spacing */
+            height: 300px; /* Adjusted height for the blue boxes */
+        }
+    </style>
+</head>
+<body>
+    <h1>รหัสนักศึกษา 6540011054 นายอิทธิกร นาวาพัสดุ</h1>
+    <h2>Quiz 5: Box model</h2>
+
+    <div class="main">
+        <p class="feature">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Corrupti optio mollitia veniam laudantium ducimus necessitatibus adipisci, hic unde fugit. 
+            Explicabo soluta libero voluptatem, necessitatibus quo facilis nulla earum non sunt?
+        </p>
+
+        <p class="col1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dicta sapiente dolore tempore dolorum! Repellendus maiores at cum amet numquam. 
+            Fugiat, incidunt dolores. Ad sunt voluptate esse tenetur, harum totam velit?
+        </p>
+
+        <p class="col2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquam tenetur est repellendus ab ratione incidunt unde, 
+            doloremque molestias atque officiis pariatur eos quis commodi corrupti alias veritatis cumque perspiciatis. Fuga.
+        </p>
+    </div>
+</body>
+</html>
