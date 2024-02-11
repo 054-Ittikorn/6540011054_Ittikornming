@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <h1>เขียนโปรแกรม JavaScript เพื่อตรวจสอบจากสองที่กำหนด
+        จำนวนเต็ม ไม่ว่าอันหนึ่งจะเป็นบวกและอีกอันหนึ่งเป็นหรือไม่
+        เชิงลบ</h1>
+    
+    <script>
+        function checkPositiveNegative(x, y) {
+            if ((x > 0 && y < 0) || (x < 0 && y > 0)) {
+                return true; // One number is positive and the other is negative
+            } else {
+                return false; // Both numbers have the same sign or both are zero
+            }
+        }
+
+        function checkEvenOdd(num) {
+            if (num % 2 === 0) {
+                return num + " is even number";
+            } else {
+                return num + " is odd number";
+            }
+        }
+
+        // Example integers
+        var num1 = 3;
+        var num2 = -5;
+
+        if (checkPositiveNegative(num1, num2)) {
+            document.write("One number is positive and the other one is negative. <br>");
+        } else {
+            document.write("Both numbers have the same sign or both are zero. <br>");
+        }
+
+        document.write(checkEvenOdd(num1) + "<br>");
+        document.write(checkEvenOdd(num2) + "<br>");
+    </script>
+</body>
+</html>

@@ -3,31 +3,31 @@
 
 body {
     font-family: "Kanit", sans-serif;
-    background-color: #f8f9fa; /* Light grayish background */
+    background-color: #fafaf8; /* Light grayish background */
 }
 
 .navbar-brand {
-    color: #495057; /* Dark gray text */
+    color: #575749; /* Dark gray text */
 }
 
 .container-fluid {
     padding: 15px;
     font-size: 18px;
-    color: #495057; /* Dark gray text */
+    color: #000000; /* Dark gray text */
 }
 
 .container-fluid a {
-    color: #495057; /* Dark gray text */
+    color: #4a4957; /* Dark gray text */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .container-fluid a:hover {
-    color: #6c757d; /* Darker gray on hover */
+    color: #7b7d6c; /* Darker gray on hover */
 }
 
 .container-fluid h2 {
-    color: #6c757d; /* Darker gray */
+    color: #7a7d6c; /* Darker gray */
     font-size: 24px;
     margin: 10px 0;
 }
@@ -38,7 +38,7 @@ body {
 
 .myBtn {
     color: #ffffff; /* White text */
-    background-color: #6c757d; /* Darker gray */
+    background-color: #04a0c7; /* Darker gray */
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 5px;
@@ -46,11 +46,11 @@ body {
 }
 
 .myBtn:hover {
-    background-color: #495057; /* Darkest gray on hover */
+    background-color: #5e524f; /* Darkest gray on hover */
 }
 
 .portfolio {
-    background-color: #dee2e6; /* Light grayish background */
+    background-color: #fffb00; /* Light grayish background */
     padding: 20px 0;
 }
 
@@ -58,7 +58,7 @@ body {
     display: block;
     text-align: center;
     font-size: 60px;
-    color: #6c757d; /* Darker gray */
+    color: #706c7d; /* Darker gray */
 }
 
 .headerVSpace {
@@ -69,8 +69,30 @@ body {
     width: 100%;
     height: auto;
 }
+.col-3 img {
+    width: 100%;
+    height: auto;
+    margin-left: 50rem;
+}
 
 .text-start h1 {
     font-size: 35px;
-    color: #6c757d; /* Darker gray */
+    color: #7c7d6c; /* Darker gray */
+    /* ย้ายส่วน footer ไปไว้กลาง */
 }
+
+
+#test {
+    background-color: white;
+}
+#logo {
+    max-width: 80px; /* กำหนดความกว้างสูงสุดของโลโก้ */
+    height: auto; /* ความสูงจะปรับตามอัตราส่วนของภาพอัตโนมัติ */
+}
+h1 span {
+    color: rgb(0, 153, 255);
+}
+
+
+
+

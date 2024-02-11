@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handler</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello</h1>
+    <button id="clickme">Click Me</button>
+
+    <form action="">
+      <p>Username :</p>
+      <input type="text" id="username" />
+      <p id="errorUsername" class="error"></p>
+      <p>Password :</p>
+      <input type="password" id="password" />
+      <p id="errorPassword" class="error"></p>
+      <input type="submit" value="OK" />
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector("form").onsubmit = function (event) {
+        let username = document.querySelector("#username").value;
+        let password = document.querySelector("#password").value;
+        let checkUsername = true;
+        let checkPassword = true;
+
+        // Check username length
+        if (username.length < 8) {
+          document.querySelector("#errorUsername").innerHTML =
+            "Username must be at least 8 characters long";
+          checkUsername = false;
+        } else {
+          document.querySelector("#errorUsername").innerHTML = "";
+        }
+
+        // Check password length
+        if (password.length < 8) {
+          document.querySelector("#errorPassword").innerHTML =
+            "Password must be at least 8 characters long";
+          checkPassword = false;
+        } else {
+          document.querySelector("#errorPassword").innerHTML = "";
+        }
+
+        // Prevent form submission if validation fails
+        if (!checkUsername || !checkPassword) {
+          event.preventDefault();
+        }
+      };
+
+      document.querySelector("#clickme").onclick = function () {
+        document.querySelector("h1").innerHTML = "Good Bye";
+      };
+    });
+  </script>
+</body>
+</html>
